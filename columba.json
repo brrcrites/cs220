@@ -1,0 +1,2636 @@
+{
+    "components": [
+        {
+            "name": "mixer-001",
+            "id": "id-mixer-001",
+            "entity": "mixer",
+            "x-span": 2600,
+            "y-span": 1400,
+            "layers": [
+                "id-layer-001",
+                "id-layer-002"
+            ],
+            "params": {
+                "valves": [
+                    { 
+                        "id": "peristaltic-pump-001-001", 
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-002",
+                        "internal-connections": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-003",
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-004",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-004",
+                        "internal-connections": [
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-001",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-002",
+                        "internal-connections": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-003",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-004",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-004",
+                        "internal-connections": [
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-001",
+                        "internal-connections": [
+                            "pink-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-002",
+                        "internal-connections": [
+                            "pink-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-003",
+                        "internal-connections": [
+                            "pink-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-004",
+                        "internal-connections": [
+                            "pink-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-001",
+                        "internal-connections": [
+                            "green-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-002",
+                        "internal-connections": [
+                            "green-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-003",
+                        "internal-connections": [
+                            "green-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-004",
+                        "internal-connections": [
+                            "green-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "loading-valve-001",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-002",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-003",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-004",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-005",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-006",
+                        "internal-connections": [ ]
+                    }
+                ],
+                "groups": [
+                    {
+                        "id": "peristaltic-group-001",
+                        "valves": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-004"
+                        ],
+                        "num-required": 3
+                    },
+                    {
+                        "id": "peristaltic-group-002",
+                        "valves": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-004"
+                        ],
+                        "num-required": 3
+                    }
+                ]
+            },
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 0,
+                    "y": 700
+                },
+                {
+                    "label": "flow-port-002",
+                    "layer": "id-layer-001",
+                    "x": 2600,
+                    "y": 700
+                },
+                {
+                    "label": "bypass-port-green-001",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-001",
+                    "x": 700,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-002",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-002",
+                    "x": 700,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-green-003",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-003",
+                    "x": 1900,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-004",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-004",
+                    "x": 1900,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-pink-001",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-001",
+                    "x": 800,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-002",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-002",
+                    "x": 800,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-pink-003",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-003",
+                    "x": 1800,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-004",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-004",
+                    "x": 1800,
+                    "y": 1400
+                },
+                {
+                    "label": "control-port-001",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-001",
+                    "x": 1000,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-004",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-004",
+                    "x": 1600,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-005",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-001",
+                    "x": 1000,
+                    "y": 1400
+                },
+                {
+                    "label": "control-port-008",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-004",
+                    "x": 1600,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-001",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-001",
+                    "x": 100,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-002",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-001",
+                    "x": 100,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-003",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-002",
+                    "x": 500,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-004",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-002",
+                    "x": 500,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-005",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-003",
+                    "x": 300,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-006",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-003",
+                    "x": 300,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-007",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-004",
+                    "x": 2500,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-008",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-004",
+                    "x": 2500,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-009",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 2300,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-010",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 2300,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-011",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 2100,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-012",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 2100,
+                    "y": 1400
+                }
+            ]
+        },
+		{
+            "name": "mixer-002",
+            "id": "id-mixer-002",
+            "entity": "mixer",
+            "x-span": 2600,
+            "y-span": 1400,
+            "layers": [
+                "id-layer-001",
+                "id-layer-002"
+            ],
+            "params": {
+                "valves": [
+                    { 
+                        "id": "peristaltic-pump-001-001", 
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-002",
+                        "internal-connections": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-003",
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-004",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-004",
+                        "internal-connections": [
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-001",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-002",
+                        "internal-connections": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-003",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-004",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-004",
+                        "internal-connections": [
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-001",
+                        "internal-connections": [
+                            "pink-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-002",
+                        "internal-connections": [
+                            "pink-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-003",
+                        "internal-connections": [
+                            "pink-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-004",
+                        "internal-connections": [
+                            "pink-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-001",
+                        "internal-connections": [
+                            "green-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-002",
+                        "internal-connections": [
+                            "green-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-003",
+                        "internal-connections": [
+                            "green-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-004",
+                        "internal-connections": [
+                            "green-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "loading-valve-001",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-002",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-003",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-004",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-005",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-006",
+                        "internal-connections": [ ]
+                    }
+                ],
+                "groups": [
+                    {
+                        "id": "peristaltic-group-001",
+                        "valves": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-004"
+                        ],
+                        "num-required": 3
+                    },
+                    {
+                        "id": "peristaltic-group-002",
+                        "valves": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-004"
+                        ],
+                        "num-required": 3
+                    }
+                ]
+            },
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 0,
+                    "y": 700
+                },
+                {
+                    "label": "flow-port-002",
+                    "layer": "id-layer-001",
+                    "x": 2600,
+                    "y": 700
+                },
+                {
+                    "label": "bypass-port-green-001",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-001",
+                    "x": 700,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-002",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-002",
+                    "x": 700,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-green-003",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-003",
+                    "x": 1900,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-004",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-004",
+                    "x": 1900,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-pink-001",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-001",
+                    "x": 800,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-002",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-002",
+                    "x": 800,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-pink-003",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-003",
+                    "x": 1800,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-004",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-004",
+                    "x": 1800,
+                    "y": 1400
+                },
+                {
+                    "label": "control-port-001",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-001",
+                    "x": 1000,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-004",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-004",
+                    "x": 1600,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-005",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-001",
+                    "x": 1000,
+                    "y": 1400
+                },
+                {
+                    "label": "control-port-008",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-004",
+                    "x": 1600,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-001",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-001",
+                    "x": 100,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-002",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-001",
+                    "x": 100,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-003",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-002",
+                    "x": 500,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-004",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-002",
+                    "x": 500,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-005",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-003",
+                    "x": 300,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-006",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-003",
+                    "x": 300,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-007",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-004",
+                    "x": 2500,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-008",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-004",
+                    "x": 2500,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-009",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 2300,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-010",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 2300,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-011",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 2100,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-012",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 2100,
+                    "y": 1400
+                }
+            ]
+        },
+		{
+            "name": "mixer-003",
+            "id": "id-mixer-003",
+            "entity": "mixer",
+            "x-span": 2600,
+            "y-span": 1400,
+            "layers": [
+                "id-layer-001",
+                "id-layer-002"
+            ],
+            "params": {
+                "valves": [
+                    { 
+                        "id": "peristaltic-pump-001-001", 
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-002",
+                        "internal-connections": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-003",
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-004",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-004",
+                        "internal-connections": [
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-001",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-002",
+                        "internal-connections": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-003",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-004",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-004",
+                        "internal-connections": [
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-001",
+                        "internal-connections": [
+                            "pink-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-002",
+                        "internal-connections": [
+                            "pink-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-003",
+                        "internal-connections": [
+                            "pink-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-004",
+                        "internal-connections": [
+                            "pink-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-001",
+                        "internal-connections": [
+                            "green-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-002",
+                        "internal-connections": [
+                            "green-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-003",
+                        "internal-connections": [
+                            "green-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-004",
+                        "internal-connections": [
+                            "green-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "loading-valve-001",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-002",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-003",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-004",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-005",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-006",
+                        "internal-connections": [ ]
+                    }
+                ],
+                "groups": [
+                    {
+                        "id": "peristaltic-group-001",
+                        "valves": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-004"
+                        ],
+                        "num-required": 3
+                    },
+                    {
+                        "id": "peristaltic-group-002",
+                        "valves": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-004"
+                        ],
+                        "num-required": 3
+                    }
+                ]
+            },
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 0,
+                    "y": 700
+                },
+                {
+                    "label": "flow-port-002",
+                    "layer": "id-layer-001",
+                    "x": 2600,
+                    "y": 700
+                },
+                {
+                    "label": "bypass-port-green-001",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-001",
+                    "x": 700,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-002",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-002",
+                    "x": 700,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-green-003",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-003",
+                    "x": 1900,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-004",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-004",
+                    "x": 1900,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-pink-001",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-001",
+                    "x": 800,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-002",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-002",
+                    "x": 800,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-pink-003",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-003",
+                    "x": 1800,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-004",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-004",
+                    "x": 1800,
+                    "y": 1400
+                },
+                {
+                    "label": "control-port-001",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-001",
+                    "x": 1000,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-004",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-004",
+                    "x": 1600,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-005",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-001",
+                    "x": 1000,
+                    "y": 1400
+                },
+                {
+                    "label": "control-port-008",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-004",
+                    "x": 1600,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-001",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-001",
+                    "x": 100,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-002",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-001",
+                    "x": 100,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-003",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-002",
+                    "x": 500,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-004",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-002",
+                    "x": 500,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-005",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-003",
+                    "x": 300,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-006",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-003",
+                    "x": 300,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-007",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-004",
+                    "x": 2500,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-008",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-004",
+                    "x": 2500,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-009",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 2300,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-010",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 2300,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-011",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 2100,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-012",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 2100,
+                    "y": 1400
+                }
+            ]
+        },
+		{
+            "name": "mixer-004",
+            "id": "id-mixer-004",
+            "entity": "mixer",
+            "x-span": 2600,
+            "y-span": 1400,
+            "layers": [
+                "id-layer-001",
+                "id-layer-002"
+            ],
+            "params": {
+                "valves": [
+                    { 
+                        "id": "peristaltic-pump-001-001", 
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-002",
+                        "internal-connections": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-003",
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-004",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-004",
+                        "internal-connections": [
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-001",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-002",
+                        "internal-connections": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-003",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-004",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-004",
+                        "internal-connections": [
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-001",
+                        "internal-connections": [
+                            "pink-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-002",
+                        "internal-connections": [
+                            "pink-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-003",
+                        "internal-connections": [
+                            "pink-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-004",
+                        "internal-connections": [
+                            "pink-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-001",
+                        "internal-connections": [
+                            "green-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-002",
+                        "internal-connections": [
+                            "green-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-003",
+                        "internal-connections": [
+                            "green-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-004",
+                        "internal-connections": [
+                            "green-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "loading-valve-001",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-002",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-003",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-004",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-005",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-006",
+                        "internal-connections": [ ]
+                    }
+                ],
+                "groups": [
+                    {
+                        "id": "peristaltic-group-001",
+                        "valves": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-004"
+                        ],
+                        "num-required": 3
+                    },
+                    {
+                        "id": "peristaltic-group-002",
+                        "valves": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-004"
+                        ],
+                        "num-required": 3
+                    }
+                ]
+            },
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 0,
+                    "y": 700
+                },
+                {
+                    "label": "flow-port-002",
+                    "layer": "id-layer-001",
+                    "x": 2600,
+                    "y": 700
+                },
+                {
+                    "label": "bypass-port-green-001",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-001",
+                    "x": 700,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-002",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-002",
+                    "x": 700,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-green-003",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-003",
+                    "x": 1900,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-004",
+                    "layer": "id-layer-001",
+                    "valve": "green-bypass-valve-004",
+                    "x": 1900,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-pink-001",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-001",
+                    "x": 800,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-002",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-002",
+                    "x": 800,
+                    "y": 1400
+                },
+                {
+                    "label": "bypass-port-pink-003",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-003",
+                    "x": 1800,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-004",
+                    "layer": "id-layer-001",
+                    "valve": "pink-bypass-valve-004",
+                    "x": 1800,
+                    "y": 1400
+                },
+                {
+                    "label": "control-port-001",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-001",
+                    "x": 1000,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-004",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-004",
+                    "x": 1600,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-005",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-001",
+                    "x": 1000,
+                    "y": 1400
+                },
+                {
+                    "label": "control-port-008",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-004",
+                    "x": 1600,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-001",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-001",
+                    "x": 100,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-002",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-001",
+                    "x": 100,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-003",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-002",
+                    "x": 500,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-004",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-002",
+                    "x": 500,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-005",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-003",
+                    "x": 300,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-006",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-003",
+                    "x": 300,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-007",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-004",
+                    "x": 2500,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-008",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-004",
+                    "x": 2500,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-009",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 2300,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-010",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 2300,
+                    "y": 1400
+                },
+                {
+                    "label": "loading-port-011",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 2100,
+                    "y": 0
+                },
+                {
+                    "label": "loading-port-012",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 2100,
+                    "y": 1400
+                }
+            ]
+        },
+		{
+            "name": "vertical-mixer-001",
+            "id": "id-mixer-005",
+            "entity": "vertical-mixer",
+            "x-span": 1400,
+            "y-span": 2600,
+            "layers": [
+                "id-layer-001",
+                "id-layer-002"
+            ],
+            "params": {
+                "valves": [
+                    { 
+                        "id": "peristaltic-pump-001-001", 
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-002",
+                        "internal-connections": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-003",
+                        "internal-connections": [
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-004",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-001-004",
+                        "internal-connections": [
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-001",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-007"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-002",
+                        "internal-connections": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-008"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-003",
+                        "internal-connections": [
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-004",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "peristaltic-pump-002-004",
+                        "internal-connections": [
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-005"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-001",
+                        "internal-connections": [
+                            "pink-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-002",
+                        "internal-connections": [
+                            "pink-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-003",
+                        "internal-connections": [
+                            "pink-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "pink-bypass-valve-004",
+                        "internal-connections": [
+                            "pink-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-001",
+                        "internal-connections": [
+                            "green-bypass-valve-002"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-002",
+                        "internal-connections": [
+                            "green-bypass-valve-001"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-003",
+                        "internal-connections": [
+                            "green-bypass-valve-004"
+                        ]
+                    },
+                    { 
+                        "id": "green-bypass-valve-004",
+                        "internal-connections": [
+                            "green-bypass-valve-003"
+                        ]
+                    },
+                    { 
+                        "id": "loading-valve-001",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-002",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-003",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-004",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-005",
+                        "internal-connections": [ ]
+                    },
+                    { 
+                        "id": "loading-valve-006",
+                        "internal-connections": [ ]
+                    }
+                ],
+                "groups": [
+                    {
+                        "id": "peristaltic-group-001",
+                        "valves": [
+                            "peristaltic-pump-001-001",
+                            "peristaltic-pump-001-002",
+                            "peristaltic-pump-001-003",
+                            "peristaltic-pump-001-004"
+                        ],
+                        "num-required": 3
+                    },
+                    {
+                        "id": "peristaltic-group-002",
+                        "valves": [
+                            "peristaltic-pump-002-001",
+                            "peristaltic-pump-002-002",
+                            "peristaltic-pump-002-003",
+                            "peristaltic-pump-002-004"
+                        ],
+                        "num-required": 3
+                    }
+                ]
+            },
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 1400,
+                    "y": 1300
+                },
+                {
+                    "label": "flow-port-002",
+                    "layer": "id-layer-001",
+                    "x": 0,
+                    "y": 1300
+                },
+                {
+                    "label": "bypass-port-green-001",
+                    "layer": "id-layer-002",
+                    "valve": "green-bypass-valve-001",
+                    "x": 400,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-002",
+                    "layer": "id-layer-002",
+                    "valve": "green-bypass-valve-002",
+                    "x": 400,
+                    "y": 2600
+                },
+                {
+                    "label": "bypass-port-green-003",
+                    "layer": "id-layer-002",
+                    "valve": "green-bypass-valve-003",
+                    "x": 1000,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-green-004",
+                    "layer": "id-layer-002",
+                    "valve": "green-bypass-valve-004",
+                    "x": 1000,
+                    "y": 2600
+                },
+                {
+                    "label": "bypass-port-pink-001",
+                    "layer": "id-layer-002",
+                    "valve": "pink-bypass-valve-001",
+                    "x": 300,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-002",
+                    "layer": "id-layer-002",
+                    "valve": "pink-bypass-valve-002",
+                    "x": 300,
+                    "y": 2600
+                },
+                {
+                    "label": "bypass-port-pink-003",
+                    "layer": "id-layer-002",
+                    "valve": "pink-bypass-valve-003",
+                    "x": 1100,
+                    "y": 0
+                },
+                {
+                    "label": "bypass-port-pink-004",
+                    "layer": "id-layer-002",
+                    "valve": "pink-bypass-valve-004",
+                    "x": 1100,
+                    "y": 2600
+                },
+                {
+                    "label": "control-port-001",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-001",
+                    "x": 500,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-004",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-001-004",
+                    "x": 900,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-005",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-001",
+                    "x": 500,
+                    "y": 2600
+                },
+                {
+                    "label": "control-port-008",
+                    "layer": "id-layer-002",
+                    "valve": "peristaltic-pump-002-004",
+                    "x": 900,
+                    "y": 2600
+                },
+                {
+                    "label": "control-port-009",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-001",
+                    "x": 200,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-010",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-002",
+                    "x": 200,
+                    "y": 2600
+                },
+                {
+                    "label": "control-port-011",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-003",
+                    "x": 1200,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-012",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-004",
+                    "x": 1200,
+                    "y": 2600
+                },
+                {
+                    "label": "control-port-013",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 100,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-014",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-005",
+                    "x": 100,
+                    "y": 2600
+                },
+                {
+                    "label": "control-port-015",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 1300,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-016",
+                    "layer": "id-layer-002",
+                    "valve": "loading-valve-006",
+                    "x": 1300,
+                    "y": 2600
+                }
+            ]
+        },
+        {
+            "name": "column-chamber-001",
+            "id": "id-column-chamber-001",
+            "entity": "column-chamber",
+            "x-span": 1040,
+            "y-span": 20,
+            "layers": [
+                "id-layer-001",
+                "id-layer-002"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-002",
+                    "x": 0,
+                    "y": 10
+                },
+                {
+                    "label": "flow-port-002",
+                    "layer": "id-layer-002",
+                    "x": 1040,
+                    "y": 10
+                },
+                {
+                    "label": "control-port-001",
+                    "layer": "id-layer-002",
+                    "x": 1020,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-002",
+                    "layer": "id-layer-002",
+                    "x": 20,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-003",
+                    "layer": "id-layer-002",
+                    "x": 1020,
+                    "y": 20
+                },
+                {
+                    "label": "control-port-004",
+                    "layer": "id-layer-002",
+                    "x": 20,
+                    "y": 20
+                }
+            ]
+        },
+        {
+            "name": "column-chamber-002",
+            "id": "id-column-chamber-002",
+            "entity": "column-chamber",
+            "x-span": 1040,
+            "y-span": 20,
+            "layers": [
+                "id-layer-001",
+                "id-layer-002"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-002",
+                    "x": 0,
+                    "y": 10
+                },
+                {
+                    "label": "flow-port-002",
+                    "layer": "id-layer-002",
+                    "x": 1040,
+                    "y": 10
+                },
+                {
+                    "label": "control-port-001",
+                    "layer": "id-layer-002",
+                    "x": 1020,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-002",
+                    "layer": "id-layer-002",
+                    "x": 20,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-003",
+                    "layer": "id-layer-002",
+                    "x": 1020,
+                    "y": 20
+                },
+                {
+                    "label": "control-port-004",
+                    "layer": "id-layer-002",
+                    "x": 20,
+                    "y": 20
+                }
+            ]
+        },
+        {
+            "name": "column-chamber-003",
+            "id": "id-column-chamber-003",
+            "entity": "column-chamber",
+            "x-span": 1040,
+            "y-span": 20,
+            "layers": [
+                "id-layer-001",
+                "id-layer-002"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-002",
+                    "x": 0,
+                    "y": 10
+                },
+                {
+                    "label": "flow-port-002",
+                    "layer": "id-layer-002",
+                    "x": 1040,
+                    "y": 10
+                },
+                {
+                    "label": "control-port-001",
+                    "layer": "id-layer-002",
+                    "x": 1020,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-002",
+                    "layer": "id-layer-002",
+                    "x": 20,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-003",
+                    "layer": "id-layer-002",
+                    "x": 1020,
+                    "y": 20
+                },
+                {
+                    "label": "control-port-004",
+                    "layer": "id-layer-002",
+                    "x": 20,
+                    "y": 20
+                }
+            ]
+        },
+		{
+            "name": "column-chamber-004",
+            "id": "id-column-chamber-004",
+            "entity": "column-chamber",
+            "x-span": 1040,
+            "y-span": 20,
+            "layers": [
+                "id-layer-001",
+                "id-layer-002"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-002",
+                    "x": 0,
+                    "y": 10
+                },
+                {
+                    "label": "flow-port-002",
+                    "layer": "id-layer-002",
+                    "x": 1040,
+                    "y": 10
+                },
+                {
+                    "label": "control-port-001",
+                    "layer": "id-layer-002",
+                    "x": 1020,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-002",
+                    "layer": "id-layer-002",
+                    "x": 20,
+                    "y": 0
+                },
+                {
+                    "label": "control-port-003",
+                    "layer": "id-layer-002",
+                    "x": 1020,
+                    "y": 20
+                },
+                {
+                    "label": "control-port-004",
+                    "layer": "id-layer-002",
+                    "x": 20,
+                    "y": 20
+                }
+            ]
+        },
+        {
+            "name": "flow-input-001",
+            "id": "id-flow-input-001",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-002",
+            "id": "id-flow-input-002",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x":24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-003",
+            "id": "id-flow-input-003",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-004",
+            "id": "id-flow-input-004",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-005",
+            "id": "id-flow-input-005",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-006",
+            "id": "id-flow-input-006",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-007",
+            "id": "id-flow-input-007",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-008",
+            "id": "id-flow-input-008",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-009",
+            "id": "id-flow-input-009",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-010",
+            "id": "id-flow-input-010",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-011",
+            "id": "id-flow-input-011",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-012",
+            "id": "id-flow-input-012",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-input-013",
+            "id": "id-flow-input-013",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 24,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-output-001",
+            "id": "id-flow-output-001",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 0,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-output-002",
+            "id": "id-flow-output-002",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 0,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-output-003",
+            "id": "id-flow-output-003",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 0,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name": "flow-output-004",
+            "id": "id-flow-output-004",
+            "entity": "flow-port",
+            "x-span": 24,
+            "y-span": 24,
+            "layers": [
+                "id-layer-001"
+            ],
+            "ports": [
+                {
+                    "label": "flow-port-001",
+                    "layer": "id-layer-001",
+                    "x": 0,
+                    "y": 12
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "id-connection-mixer-001-column-chamber-001", 
+            "name": "connection-mixer-001-column-chamber-001", 
+            "layer": "id-layer-001", 
+            "source": {
+                "component": "id-mixer-001", 
+                "port": "flow-port-002"
+            },
+            "sinks": [
+                {
+                    "component": "id-column-chamber-001", 
+                    "port": "flow-port-001"
+                }
+            ]
+        },
+		{
+            "id": "id-connection-mixer-002-column-chamber-002", 
+            "name": "connection-mixer-002-column-chamber-002", 
+            "layer": "id-layer-001", 
+            "source": {
+                "component": "id-mixer-002", 
+                "port": "flow-port-002"
+            },
+			"sinks": [
+                {
+                    "component": "id-column-chamber-002", 
+                    "port": "flow-port-001"
+                }
+            ]
+        }, 
+		{
+            "id": "id-connection-mixer-003-column-chamber-003", 
+            "name": "connection-mixer-003-column-chamber-003", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-mixer-003", 
+                "port": "flow-port-002"
+            },
+			"sinks": [
+                {
+                    "component": "id-column-chamber-003", 
+                    "port": "flow-port-001"
+                }
+            ]
+        }, 
+		{
+            "id": "id-connection-mixer-004-column-chamber-004", 
+            "name": "connection-mixer-004-column-chamber-004", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-mixer-004", 
+                "port": "flow-port-002"
+            },
+			"sinks": [
+                {
+                    "component": "id-column-chamber-004", 
+                    "port": "flow-port-001"
+                }
+            ]
+        }, 
+		{
+            "id": "id-connection-column-chamber-001-flow-output-001", 
+            "name": "connection-column-001-flow-output-001", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-column-chamber-001", 
+                "port": "flow-port-002"
+            },
+			"sinks": [
+                {
+                    "component": "id-flow-output-001", 
+                    "port": "flow-port-001"
+                }
+            ]
+        }, 
+		{
+            "id": "id-connection-column-chamber-002-flow-output-002", 
+            "name": "connection-column-002-flow-output-002", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-column-chamber-002", 
+                "port": "flow-port-002"
+            },
+			"sinks": [
+                {
+                    "component": "id-flow-output-002", 
+                    "port": "flow-port-001"
+                }
+            ]
+        }, 
+		{
+            "id": "id-connection-column-chamber-003-flow-output-003", 
+            "name": "connection-column-003-flow-output-003", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-column-chamber-003", 
+                "port": "flow-port-002"
+            },
+			"sinks": [
+                {
+                    "component": "id-flow-output-003", 
+                    "port": "flow-port-001"
+                }
+            ]
+        }, 
+		{
+            "id": "id-connection-column-chamber-004-flow-output-004", 
+            "name": "connection-column-004-flow-output-004", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-column-chamber-004", 
+                "port": "flow-port-002"
+            },
+			"sinks": [
+                {
+                    "component": "id-flow-output-004", 
+                    "port": "flow-port-001"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-001-mixer-005", 
+            "name": "connection-flow-input-001-mixer-005", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-001", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-005", 
+                    "port": "flow-port-002"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-002-mixer-005", 
+            "name": "connection-flow-input-002-mixer-005", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-002", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-005", 
+                    "port": "flow-port-002"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-003-mixer-005", 
+            "name": "connection-flow-input-003-mixer-005", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-003", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-005", 
+                    "port": "flow-port-002"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-004-mixer-005", 
+            "name": "connection-flow-input-004-mixer-005", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-004", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-005", 
+                    "port": "flow-port-002"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-005-mixer-005", 
+            "name": "connection-flow-input-005-mixer-005", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-005", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-005", 
+                    "port": "flow-port-002"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-006-mixer-005", 
+            "name": "connection-flow-input-006-mixer-005", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-006", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-005", 
+                    "port": "flow-port-002"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-007-mixer-005", 
+            "name": "connection-flow-input-007-mixer-005", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-007", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-005", 
+                    "port": "flow-port-002"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-008-mixer-005", 
+            "name": "connection-flow-input-008-mixer-005", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-008", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-005", 
+                    "port": "flow-port-002"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-009-mixer-005", 
+            "name": "connection-flow-input-009-mixer-005", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-009", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-005", 
+                    "port": "flow-port-002"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-mixer-005-mixer-bank", 
+            "name": "connection-mixer-005-mixer-bank", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-mixer-005", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-001", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-002", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-003", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-004", 
+                    "port": "flow-port-001"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-010-mixer-bank", 
+            "name": "connection-flow-input-010-mixer-bank", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-010", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-001", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-002", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-003", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-004", 
+                    "port": "flow-port-001"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-011-mixer-bank", 
+            "name": "connection-flow-input-011-mixer-bank", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-011", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-001", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-002", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-003", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-004", 
+                    "port": "flow-port-001"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-012-mixer-bank", 
+            "name": "connection-flow-input-012-mixer-bank", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-012", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-001", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-002", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-003", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-004", 
+                    "port": "flow-port-001"
+                }
+            ]
+        },
+        {
+            "id": "id-connection-flow-input-013-mixer-bank", 
+            "name": "connection-flow-input-013-mixer-bank", 
+            "layer": "id-layer-001",  
+            "source": {
+                "component": "id-flow-input-013", 
+                "port": "flow-port-001"
+            },
+			"sinks": [
+                {
+                    "component": "id-mixer-001", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-002", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-003", 
+                    "port": "flow-port-001"
+                },
+                {
+                    "component": "id-mixer-004", 
+                    "port": "flow-port-001"
+                }
+            ]
+        }
+    ],
+    "layers": [
+        {
+            "id": "id-layer-001",
+            "name": "flow"
+        },
+        {
+            "id": "id-layer-002",
+            "name": "control"
+        }
+    ],
+    "name": "columba-chip"
+}
